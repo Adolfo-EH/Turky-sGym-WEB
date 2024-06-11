@@ -181,10 +181,8 @@ body{
 }
 
 .horario{
-    background-color: #000;
-    background-size: cover;
-    background-position: center center;
-    color: #fff;
+    background-color: black;
+    color: white;
     position: relative;
     display: flex;
     justify-content: center;
@@ -192,44 +190,22 @@ body{
     text-align: center; 
 }
 
-.contenedor-horario {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
+.contenedor-horario{
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
+.contenedor-horario h2{
+    color: #1fcfdf;
 }
 
-p {
-    font-size: 16px;
-    margin-bottom: 40px;
+.dias{
+    padding: 15px;
 }
 
-.semana {
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-.domingo {
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    margin-bottom: 10px;
+.contenedor-hora{
+    background-color: #fff;  
+    color: #000;
+    display: inline-block;
+    padding: 8px;
 }
