@@ -633,3 +633,94 @@ color: #1fcfdf;
     margin: 20px 0;
     font-size: 16px;
 }
+
+
+.Acceder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+
+  .ContenedorAcceder,
+  .ContenedorRegistro {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    margin: 0 10px;
+  }
+
+
+  H2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444;
+  }
+
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #444;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+  }
+
+
+  .remember {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .remember p {
+    color: #999;
+    font-size: 12px;
+  }
+
+
+  .btn-1 {
+    background-color: #1fcfdf;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+  }
+
+
+  input[type="submit"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+
+  .ContenedorAcceder .remember a,
+  .ContenedorRegistro .remember a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 12px;
+  }
+
+  .ContenedorAcceder .remember a:hover,
+  .ContenedorRegistro .remember a:hover {
+    color: #444;
+  }
+  u {
+    color: blue
+  }

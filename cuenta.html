@@ -9,7 +9,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- MENU --->
     <div class="contenedor-header">
@@ -36,66 +35,50 @@
             </div>
         </header>
     </div>
-     <!-- SECCION MENSAJE CONTACTO -->
-    <section class="contacto">
-        <div class="contenido-seccion">
-            <div class="info">
-                <h2>CONTACTANOS</h2>
-                <p>¿Tienes Alguna duda sobre el gimnasio? Visitanos o hablanos a través de nuestras redes sociales</p>
-            </div>         
-        </div>
-    </section>
+<!--APARTADO ACCEDER-->
+<section class="Acceder">
+    <div class="ContenedorAcceder">
 
-    <!-- SECCION HORARIO -->
-    <section class="horario">
-        <div class="contenedor-horario">
-            <h1>HORARIO DE ATENCIÓN</h1>
-            <p>No te quedes con la duda y visítanos en los siguientes horarios</p>
-            
-            <div class="dias">
-                <h2>LUNES - VIERNES</h2>
-                <div class="contenedor-hora">
-                    7:00 AM - 1:00 PM <br>
-                    4:00 PM - 9:00 PM
-                </div>
-            </div>
-    
-            <div class="dias">
-                <h2>DOMINGOS</h2>
-                <div class="contenedor-hora">
-                    8:00 AM - 1:00 PM
-                </div>
-            </div>
-        </div>
-    </section>   
+     <form>
+         <H2>Acceder</H2>
 
-    <!-- SECCION REDES SOCIALES -->
-<section class="redes">
-    <div class="contenedor-redes">
-        <h1>REDES SOCIALES</h1>
-        <p>Envianos un mensaje con tus dudas que nosotros te responderemos</p>
+          <label for="username">Usuario</label>
+            <input type="text" id="username"required="">
 
-        <div class="facebook">
-            <a href="https://www.facebook.com/Turkysgym" target="_blank">
-                <img src="img/FB.png" alt="">
-                Turky's Gym
-            </a>
-        </div>
+          <label for="password">contraseña</label>
+            <input type="password" id="password"required="">
 
-        <div class="whatsapp">
-            <a href="https://wa.me/51901225180" target="_blank">
-                <img src="img/WSP.png" alt="">
-                901 225 180
-            </a>
-        </div>
+          <div class="remember">
+             <p>Recordar</p>
+             <p> ¿Perdiste tu clave?</p>
+          </div>
 
-        <div class="instagram">
-            <a href="https://www.instagram.com/turkysgym.pe/" target="_blank">
-                <img src="img/IG.png" alt="">
-                turkysgym.pe
-            </a>
-        </div>
+         <input type="sumbit" class="btn-1" value="Acceder">
+
+
+     </form>
+
+
     </div>
-</section>
+<!--APARTADO REGISTRAR-->
+    <div class="ContenedorRegistro">
+
+        <form>
+            <H2>Registrar</H2>
+   
+             <label for="username">Correo Electronico</label>
+               <input type="text" id="username" required="">
+               <p> A link to set a new password will be sent to your email address.
+                Sus datos personales se utilizarán para respaldar su experiencia
+                en este sitio web, para administrar el acceso a su cuenta y para
+                otros fines descritos en nuestra <u>política de privacidad.</u>
+               </p>
+               <input type="sumbit" class="btn-1" value="Registrar">
+        </form>
+   
+   
+       </div>
+  </section>
 </body>
 </html>
+
