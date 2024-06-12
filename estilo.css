@@ -152,6 +152,7 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center; 
+    background-attachment: fixed;
 }
 
 .contacto .contenido-seccion{
@@ -181,18 +182,19 @@ body{
 }
 
 .horario{
-    background-color: black;
-    color: white;
+    background-color: #000;
+    color: #fff;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center; 
+    background-attachment: scroll;
 }
 
 .contenedor-horario{
-    padding-top: 50px;
-    padding-bottom: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .contenedor-horario h2{
@@ -200,12 +202,55 @@ body{
 }
 
 .dias{
-    padding: 15px;
+    margin: 30px;
 }
 
 .contenedor-hora{
     background-color: #fff;  
     color: #000;
     display: inline-block;
-    padding: 8px;
+    padding: 5px 15px;
+    border-radius: 6px;
 }
+
+.redes{
+    color: #000;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    background-attachment: scroll;
+}
+
+.contenedor-redes{
+    margin: 50px 0px;
+}
+
+.facebook img{
+    height: 50px;
+    width: 50px;
+    margin: 6px;
+}
+
+.whatsapp img{
+    height: 60px;
+    width: 60px;
+    margin: 5px;
+}
+
+.instagram img{
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+}
+
+.instagram{
+    margin-left: 10px;
+}
+
+.contenedor-redes a {
+    text-decoration: none; /* Quita el subrayado */
+    color: inherit; /* Usa el color del texto circundante */
+}
+

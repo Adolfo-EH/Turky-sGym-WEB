@@ -70,7 +70,7 @@ body{
 /* SECCION INICIO :v*/
 .inicio{
     height: 100vh;
-    background: linear-gradient(rgba(0,1,3,.5), rgba(0,0,0,.7)), url(Imagen/entrenar-con-pesas.jpg);
+    background: linear-gradient(rgba(0,1,3,.5), rgba(0,0,0,.7)), url(img/entrenar-con-pesas.jpg);
     background-size: cover;
     background-position: center center;
     color: #fff;
