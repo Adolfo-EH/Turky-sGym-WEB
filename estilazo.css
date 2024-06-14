@@ -141,9 +141,145 @@ body{
     background-attachment: scroll;
 }
 
-/*SECCION CONTACTO*/
 
-.contacto{
+/* Ventajas */
+.Ventajas{
+    height: 88vh;
+    background-color: black;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Cambia de center a flex-start */
+    text-align: center; /* Asegura que el texto esté centrado */
+    padding-top: 50px; /* Ajusta este valor según lo necesites */
+}
+
+.Ventajas h1{
+
+    color: #1fcfdf;
+    font-weight: bold;
+    font-size: 60px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.Ventajas h2
+{
+    top: -30px; 
+    margin-top: -30px; 
+}
+.Ventajas h4
+{
+    top: -330px; 
+    margin-top: -30px; 
+    position: relative;
+}
+
+.Ventajas .imagenes{
+   
+    display: flex;
+    justify-content: center;    
+    gap: 90px;
+    margin-top: 200px;
+}
+
+.Ventajas h5{
+    text-align: center;    
+    max-width: 450px;
+}
+
+.Equipo_completo img{  
+    max-width: 600px; /* Ajusta el tamaño según sea necesario */
+    height: 300px;
+    object-fit: cover; /* Recortar la imagen para que llene el contenedor */ 
+}
+
+.Comodidad_servicios img{
+    
+    max-width: 600px; /* Ajusta el tamaño según sea necesario */
+    height: 300px;
+    flex-shrink: 0; /* Asegura que las imágenes no se reduzcan más allá de su tamaño original */
+   
+}
+.comunidad_confort img{
+    
+    max-width: 600px; /* Ajusta el tamaño según sea necesario */
+    height: 300px;
+    object-fit: cover; /* Recortar la imagen para que llene el contenedor */
+    
+}
+
+/*SECCION MAPITA UwU*/
+
+.mapa
+{
+    color: #000000;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    background-attachment: scroll;
+    margin-top: 40px;   
+}
+
+#maps {
+    margin-top: 50px; /* Ajusta este valor según lo necesites */
+}
+#maps iframe {  
+    width: 1200%;
+    height: 600px;  /* Puedes ajustar la altura según lo necesites */
+    max-width:1200px;  /* Opcional: máximo ancho para que no se expanda demasiado */
+    border: 0;
+    margin: 0 auto; 
+    margin-left: -390px;
+}
+
+/*SECCION CONTACTANOS INICIO :3*/
+
+.contacto_inicio
+{
+    color: #000;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    background-attachment: scroll;
+}
+.contenedor-contacto_inicio
+{
+    margin-top: 50px;
+}
+.email img
+{
+    height: 40px;
+    width: 40px;
+    margin: 6px;
+}
+
+.email
+{
+    margin-left: 98px;
+}
+
+.maps
+{
+    margin-left: 155px;
+}
+
+.maps img
+{
+    height: 40px;
+    width: 40px;
+    margin: 6px;
+}
+
+/*SECCION CONTACTO*/
+.contacto
+{
     height: 100vh;
     background: linear-gradient(rgba(0,1,3,.5), rgba(0,0,0,.7)), url(img/img4.jpg);
     background-size: cover;
@@ -157,12 +293,14 @@ body{
     background-attachment: fixed;
 }
 
-.contacto .contenido-seccion{
+.contacto .contenido-seccion
+{
     max-width: 1100px;
     margin: auto;
 }
 
-.contacto .info{
+.contacto .info
+{
     width: fit-content;
     margin: auto;
     position: absolute;
@@ -171,11 +309,14 @@ body{
     transform: translate(-50%, -50%);
 }
 
-.contacto .info h2{
+.contacto .info h2
+{
     font-size: 4rem;
     letter-spacing: 3px;
 }
-.contacto .info p{
+
+.contacto .info p
+{
     margin: 20px;
     color: #ffffff;
     font-size: 16px;
@@ -183,7 +324,8 @@ body{
     text-transform: uppercase;
 }
 
-.horario{
+.horario
+{
     background-color: #000;
     color: #fff;
     position: relative;
@@ -194,20 +336,24 @@ body{
     background-attachment: scroll;
 }
 
-.contenedor-horario{
+.contenedor-horario
+{
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
-.contenedor-horario h2{
+.contenedor-horario h2
+{
     color: #1fcfdf;
 }
 
-.dias{
+.dias
+{
     margin: 30px;
 }
 
-.contenedor-hora{
+.contenedor-hora
+{
     background-color: #fff;  
     color: #000;
     display: inline-block;
@@ -215,7 +361,8 @@ body{
     border-radius: 6px;
 }
 
-.redes{
+.redes
+{
     color: #000;
     position: relative;
     display: flex;
@@ -225,38 +372,46 @@ body{
     background-attachment: scroll;
 }
 
-.contenedor-redes{
+.contenedor-redes
+{
     margin: 50px 0px;
 }
 
-.facebook img{
+.facebook img
+{
     height: 50px;
     width: 50px;
     margin: 6px;
 }
 
-.whatsapp img{
+.whatsapp img
+{
     height: 60px;
     width: 60px;
     margin: 5px;
 }
 
-.instagram img{
+.instagram img
+{
     height: 40px;
     width: 40px;
     margin: 10px;
 }
 
-.instagram{
-    margin-left: 10px;
+.instagram
+{
+    margin-left: 15px;
 }
 
-.contenedor-redes a {
-    text-decoration: none; /* Quita el subrayado */
-    color: inherit; /* Usa el color del texto circundante */
+.contenedor-redes a 
+{
+    text-decoration: none; 
+    color: inherit; 
 }
+
 /*SECCION NOSOTROS*/
-.nosotros{
+.nosotros
+{
     height: 100vh;
     background: linear-gradient(rgba(0,1,3,.5), rgba(0,0,0,.7)), url(img/entrenar-con-pesas.jpg);
     background-size: cover;
@@ -269,11 +424,15 @@ body{
     text-align: center;
     background-attachment: fixed;
 }
-.nosotros .content{
+
+.nosotros .content
+{
     max-width: 1100px;
     margin: auto;
 }
-.nosotros .content{
+
+.nosotros .content
+{
     width: max-content;
     margin: auto;
     position: absolute;
@@ -281,11 +440,15 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.nosotros .content h1{
+
+.nosotros .content h1
+{
     font-size: 4rem;
     letter-spacing: 3px;
 }
-.nosotros .content p{
+
+.nosotros .content p
+{
     margin: 20px;
     color: #ffffff;
     font-size: 16px;
@@ -294,11 +457,13 @@ body{
     max-width: 1050px;
   
 }
+
 /* Seccion Equipo */
-.Equipo{
+.Equipo
+{
     height: 70vh;
-    background-color: black
-;    background-size: cover;
+    background-color: black;
+    background-size: cover;
     background-position: center center;
     color: #fff;
     position: relative;
@@ -307,25 +472,26 @@ body{
     align-items:center;
     text-align: center; /* Asegura que el texto esté centrado */
 }
-.Equipo h4{
 
+.Equipo h4
+{
     margin-top: 20px;
-
-
 }
-.Equipo h1{
 
+.Equipo h1
+{
     color: #1fcfdf;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.Equipo .imagenes{
-   
+
+.Equipo .imagenes
+{  
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;    
     gap: 400px;
     margin-top: 150px;
 }
+
 .Administradora img{
   
     max-width: 200px; /* Ajusta el tamaño según sea necesario */
