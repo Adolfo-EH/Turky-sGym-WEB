@@ -4,6 +4,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Barlow';
+    list-style: none;
+
 }
 html{
     scroll-behavior: smooth;
@@ -11,6 +13,90 @@ html{
 body{
     background-color: #dde1e9;
 }
+
+/* FOOTER >_> */
+.footer{
+    color: #dde1e9;
+    background-color: #000000;
+    padding: 30px 0;
+}
+
+.footer-row{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 150px;    
+}
+
+.footerC, .footerI, .footerL, .footerR{
+    width: 100%;
+    max-width: 300px;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.footerC ul, .footerI ul, .footerL ul{
+    text-align: center;
+    padding-left: 0; /* Asegúrate de quitar el padding izquierdo para centrar correctamente */
+}
+
+.footer-row ul li {
+    list-style: none; /* Quitar los estilos de lista por defecto */
+}
+
+.footer-row h4{
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #00C3FF;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.footer-row ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #BBBBBB;
+    display: block;
+    margin-bottom: 10px;
+    transition: all .3s ease;
+}
+
+.footer-row ul li a:hover{
+    color: #ffffff;
+    padding-left: 6px;
+}
+
+.social-links a {
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-left: 7px;
+    margin-right: 5px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all .5s ease;
+}
+
+.social-links a:hover{
+    background-color: #12bbee;
+}
+
+@media(max-width:991px){
+    .footer-row{
+        text-align: center;
+    }
+    .footer-links{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+
 
 /* SECCION MENU :v*/
 .contenedor-header{
@@ -117,21 +203,6 @@ body{
     text-decoration: none;
 }
 
-.opciones{
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.opciones .opcion{
-    border-top: 2px solid #797e8e;
-    padding: 7px;
-    color: #797e8e;
-    margin: 0 20px;
-}
-
 /* Efecto parallax */
 .parallax {
     background-attachment: fixed;
@@ -144,7 +215,7 @@ body{
 
 /* Ventajas */
 .Ventajas{
-    height: 88vh;
+    min-height: 88vh;
     background-color: black;
     background-size: cover;
     background-position: center center;
@@ -152,130 +223,192 @@ body{
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Cambia de center a flex-start */
-    text-align: center; /* Asegura que el texto esté centrado */
-    padding-top: 50px; /* Ajusta este valor según lo necesites */
+    align-items: flex-start;
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
 }
 
 .Ventajas h1{
-
     color: #1fcfdf;
     font-weight: bold;
     font-size: 60px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.Ventajas h2
-{
-    top: -30px; 
+.Ventajas h2 {
     margin-top: -30px; 
-}
-.Ventajas h4
-{
-    top: -330px; 
-    margin-top: -30px; 
-    position: relative;
+    margin-bottom: 100px;
 }
 
 .Ventajas .imagenes{
-   
     display: flex;
-    justify-content: center;    
-    gap: 90px;
-    margin-top: 200px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 50px
 }
 
-.Ventajas h5{
-    text-align: center;    
+.Ventajas .imagenes div {
+    max-width: 500px;
+    flex: 1 1 300px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.Ventajas img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 15px; /* Espacio debajo de la imagen */
+}
+
+.Ventajas h4 {
+    margin-bottom: 40px; /* Espacio debajo del h4 */
+}
+
+.Ventajas h5 {
+    text-align: center;
     max-width: 450px;
+    margin: 0 auto;
+    margin: 15px auto 0; /* Espacio encima y centrar horizontalmente */
 }
 
-.Equipo_completo img{  
-    max-width: 600px; /* Ajusta el tamaño según sea necesario */
-    height: 300px;
-    object-fit: cover; /* Recortar la imagen para que llene el contenedor */ 
+.Equipo_completo img, .Comodidad_servicios img, .comunidad_confort img {
+    width: 100%; /* Asegura que las imágenes ocupen todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Recorta la imagen para que llene el contenedor */
 }
 
-.Comodidad_servicios img{
-    
-    max-width: 600px; /* Ajusta el tamaño según sea necesario */
-    height: 300px;
-    flex-shrink: 0; /* Asegura que las imágenes no se reduzcan más allá de su tamaño original */
-   
-}
-.comunidad_confort img{
-    
-    max-width: 600px; /* Ajusta el tamaño según sea necesario */
-    height: 300px;
-    object-fit: cover; /* Recortar la imagen para que llene el contenedor */
-    
-}
-
-/*SECCION MAPITA UwU*/
-
-.mapa
-{
+/* SECCION MAPITA UwU */
+.mapa {
     color: #000000;
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center; 
+    text-align: center;
     background-attachment: scroll;
-    margin-top: 40px;   
+}
+
+.mapa h1 {
+    margin-top: 25px; 
+    margin-bottom: 50px; 
+}
+
+.mapa .contenedor-mapa{
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #maps {
-    margin-top: 50px; /* Ajusta este valor según lo necesites */
+    width: 100%;
+    max-width: 1300px; /* Opcional: máximo ancho para que no se expanda demasiado */
+    padding: 0 20px; /* Padding horizontal para evitar que el mapa toque los bordes de la pantalla */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    display: flex; /* Utiliza flexbox */
+    justify-content: center; /* Centra el contenido horizontalmente */    
+    margin-bottom: 100px;
 }
+
 #maps iframe {  
-    width: 1200%;
-    height: 600px;  /* Puedes ajustar la altura según lo necesites */
-    max-width:1200px;  /* Opcional: máximo ancho para que no se expanda demasiado */
+    width: 100%;
+    height: 600px; /* Puedes ajustar la altura según lo necesites */
     border: 0;
-    margin: 0 auto; 
-    margin-left: -390px;
+    margin: 0 auto;
 }
 
-/*SECCION CONTACTANOS INICIO :3*/
-
-.contacto_inicio
-{
+/* SECCION CONTACTANOS INICIO :3 */
+.contacto_inicio {
     color: #000;
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: center; 
+    align-items: flex-start; /* Alinear al inicio */
+    text-align: center;
     background-attachment: scroll;
-}
-.contenedor-contacto_inicio
-{
-    margin-top: 50px;
-}
-.email img
-{
-    height: 40px;
-    width: 40px;
-    margin: 6px;
+    flex-direction: row; /* Por defecto, colocar h1 y .img_con_ini en fila */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando no hay espacio */
 }
 
-.email
-{
-    margin-left: 98px;
+.contacto_inicio .textoC {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /* Alinear al inicio */
+    justify-content: center; /* Justificar al inicio */
+    gap: 70px;
+    align-items: center;
+    box-sizing: border-box;
+    max-width: 1000px; /* Ajusta según tus necesidades */
+    width: 100%;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando no hay espacio */
 }
 
-.maps
-{
-    margin-left: 155px;
+.contacto_inicio .img_con_ini {
+    margin: 0; /* Eliminar márgenes predeterminados */
+    padding: 20px; /* Ajusta según tus necesidades */
+    box-sizing: border-box;
+    max-width: 350px; /* Ajusta según tus necesidades */
+    width: 100%;
+    margin-bottom: 90px; /* Espacio entre .img_con_ini y los elementos siguientes */
+    margin-top: 100px; /* Espacio sobre .img_con_ini */
 }
 
-.maps img
-{
-    height: 40px;
-    width: 40px;
-    margin: 6px;
+.contacto_inicio h1 {
+    padding: 20px; /* Ajusta según tus necesidades */
+    box-sizing: border-box;
+    max-width: 300px; /* Ajusta según tus necesidades */
+    width: 100%;
+    order: -1; /* Cambiar orden para que h1 esté encima en dispositivos pequeños */
 }
+
+.contact_facebook, .contact_whatsapp, .contact_instagram, .contact_email, .contact_maps {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Espacio entre los elementos de contacto */
+}
+
+.contact_facebook img, .contact_whatsapp img, .contact_instagram img, .contact_email img, .contact_maps img {
+    height: 50px; /* Ajusta según tus necesidades */
+    width: 50px; /* Ajusta según tus necesidades */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.contact_instagram img, .contact_email img, .contact_maps img {
+    height: 40px; /* Ajusta según tus necesidades */
+    width: 40px; /* Ajusta según tus necesidades */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+    margin-left: 5px; /* Espacio a la izquierda de la imagen */
+}
+
+.contact_facebook a, .contact_whatsapp a, .contact_instagram a, .contact_email a, .contact_maps a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (max-width: 768px) {
+    .contacto_inicio {
+        flex-direction: column; /* Cambia a dirección de columna para dispositivos pequeños */
+        align-items: center; /* Centra los elementos en dispositivos pequeños */
+    }
+    
+    .contacto_inicio h1 {
+        order: 1; /* Devuelve el orden predeterminado */
+        max-width: 100%; /* Ajusta según tus necesidades */
+    }
+    
+    .contacto_inicio .img_con_ini {
+        order: 2; /* Cambia el orden para que .img_con_ini esté debajo de h1 en dispositivos pequeños */
+        margin-top: 0; /* Elimina el margen superior */
+    }
+}
+
+
 
 /*SECCION CONTACTO*/
 .contacto
@@ -373,7 +506,7 @@ body{
 }
 
 .contenedor-redes
-{
+{    
     margin: 50px 0px;
 }
 
@@ -401,6 +534,7 @@ body{
 .instagram
 {
     margin-left: 15px;
+    
 }
 
 .contenedor-redes a 
@@ -673,6 +807,9 @@ color: #1fcfdf;
     margin-top: 100px;
     margin-bottom: 100px;
 }
+.imagenesva .mejora{
+    margin-top: 30px;
+} 
 .imagenesva div {
     text-align: center;
     max-width: 150px; /* Ajusta el tamaño del contenedor de la imagen */
