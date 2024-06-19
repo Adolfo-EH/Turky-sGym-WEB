@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilazo.css" />
+  <!-- Font Awesome Cdn Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<body>
+  <div class="dashboard-container">
+    <nav class="navD">
+      <div class="navbarD">
+        <div class="logoD">
+          <img src="img/logo.png" alt="Logo">
+        </div>
+        <ul class="ulD">
+          <li class="liD"><a class="aD" href="#">
+            <i class="fas fa-user iD"></i>
+            <span class="nav-itemD">Dashboard</span>
+          </a>
+          </li>
+          <li class="liD"><a class="aD" href="#">
+            <i class="fas fa-chart-bar iD"></i>
+            <span class="nav-itemD">Estadísticas</span>
+          </a>
+          </li>
+          <li class="liD"><a class="aD" href="#">
+            <i class="fas fa-tasks iD"></i>
+            <span class="nav-itemD">Ventas</span>
+          </a>
+          <li class="liD">
+            <a class="aD" href="#">
+            <i class="fas fa-cog iD"></i>
+            <span class="nav-itemD">Ajustes</span>
+          </a>
+          </li>
+          <li class="liD"><a class="aD" href="#">
+            <i class="fas fa-question-circle iD"></i>
+            <span class="nav-itemD">Ayuda</span>
+          </a>
+          </li>
+          <li class="liD"><a class="aD" href="#" class="logoutD">
+            <i class="fas fa-sign-out-alt iD"></i>
+            <span class="nav-itemD">Salir</span>
+          </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="mainD">
+      <div class="main-topD">
+        <p>VENTAS</p>
+      </div>
+      <div class="main-bodyD">
+        <h1>Ventas recientes</h1>
+
+        <div class="search_barD">
+          <input type="search" placeholder="Buscar venta aquí...">
+          <select name="categoria">
+            <option>Categoria</option>
+            <option>Producto</option>
+            <option>Membresía</option>
+          </select>
+        </div>
+
+        <div class="rowD">
+          <a href="#">Ver todo</a>
+        </div>
+
+        <div class="job_card">
+          <div class="job_details">
+            <div class="img">
+                <img src="img/plan1.jpg" alt="Imagen referencial del plan mensual">
+            </div>
+            <div class="text">
+              <h2>Plan Mensual</h2>
+              <span>Juan Pérez - Cliente</span>
+            </div>
+          </div>
+          <div class="job_salary">
+            <h4>S/. 80.00</h4>
+            <span>hace 1 d</span>
+          </div>
+        </div>
+
+        <div class="job_card">
+          <div class="job_details">
+            <div class="img">
+                <img src="img/plan2.png" alt="Imagen referencial del plan trimestral">
+            </div>
+            <div class="text">
+              <h2>Plan Trimestral</h2>
+              <span>Carla Jirón - Cliente</span>
+            </div>
+          </div>
+          <div class="job_salary">
+            <h4>S/. 200.00</h4>
+            <span>hace 5 d</span>
+          </div>
+        </div>
+
+        <div class="job_card">
+          <div class="job_details">
+            <div class="img">
+                <img src="img/plan3.jpeg" alt="Imagen referencial del plan anual">
+            </div>
+            <div class="text">
+              <h2>Plan Anual</h2>
+              <span>Félix Quezada - Cliente</span>
+            </div>
+          </div>
+          <div class="job_salary">
+            <h4>S/. 480.00</h4>
+            <span>hace 12 d</span>
+          </div>
+        </div>
+
+        <div class="job_card">
+          <div class="job_details">
+            <div class="img">
+                <img src="img/polo.PNG" alt="Imagen referencial del producto polo">
+            </div>
+            <div class="text">
+              <h2>Polo Licra Compresión Deportivo Gym</h2>
+              <span>Rafael Zapata - Usuario web</span>
+            </div>
+          </div>
+          <div class="job_salary">
+            <h4>S/. 27.50</h4>
+            <span>hace 1 sem</span>
+          </div>
+        </div>
+
+        <div class="job_card">
+          <div class="job_details">
+            <div class="img">
+                <img src="img/proteina.JPG" alt="Proteina whey pro">
+            </div>
+            <div class="text">
+              <h2>Proteína Whey Pro 3Kg Chocolate</h2>
+              <span>Vanessa Venegas - Usuario web</span>
+            </div>
+          </div>
+          <div class="job_salary">
+            <h4>S/. 135.00</h4>
+            <span>hace 1 sem 3 d</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

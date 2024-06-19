@@ -738,10 +738,8 @@ body{
 .meta .imagenmision img{
 
     display: flex;
-    justify-content: center;
-    
-    gap: 400px;
-    
+    justify-content: center;    
+    gap: 400px;    
     width: 600px; 
     height: 400px;
     object-fit: cover;   
@@ -1097,3 +1095,252 @@ color: #1fcfdf;
   u {
     color: blue
   }
+
+  /*SECCION DASHBOARD*/
+
+  .containerD {
+    display: flex;
+    width: 100%;
+    font-size: 130%;
+  }
+  
+  navD {
+    background-color: #fff;
+    position: sticky;
+    top: 0px;
+    left: 0;
+    bottom: 0;
+    width: 350px;
+    height: 100vh;
+  }
+  
+  .navbarD {
+    width: 90%;
+    margin: auto;
+  }
+  
+  .logoD {
+    margin: 2rem 0 50px 0;
+    padding-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logoD img {
+    width: 100%;
+    height: 150px;
+  }
+  
+  ulD {
+    list-style: none;
+    padding: 0;
+  }
+  
+  liD {
+    padding-bottom: 50px;
+  }
+  
+  liD aD {
+    color: rgb(85, 83, 83);
+    text-decoration: none;
+  }
+  
+  nav iD {
+    width: 50px;
+    text-align: center;
+  }
+  
+  .logoutD {
+    position: absolute;
+    bottom: 20px;
+  }
+
+ /* Estilos para el dashboard */
+.dashboard-container {
+  display: flex;
+  width: 100%;
+  font-size: 130%;
+}
+
+.dashboard-container .navD {
+  background-color: #fff;
+  position: sticky;
+  top: 0px;
+  left: 0;
+  bottom: 0;
+  width: 350px;
+  height: 100vh;
+}
+
+.dashboard-container .navbarD {
+  width: 90%;
+  margin: auto;
+}
+
+.dashboard-container .logoD {
+  margin: 2rem 0 50px 0;
+  padding-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard-container .logoD img {
+  width: 100%;
+  height: 150px;
+}
+
+.dashboard-container .ulD {
+  list-style: none;
+  padding: 0;
+  margin: 0; /* Añadido para eliminar el margen predeterminado */
+}
+
+.dashboard-container .liD {
+  padding-bottom: 30px; /* Ajustado para más espacio vertical */
+}
+
+.dashboard-container .liD a {
+  display: flex; /* Alinear íconos y texto verticalmente */
+  align-items: center; /* Alinear íconos y texto verticalmente */
+  color: rgb(85, 83, 83);
+  text-decoration: none;
+}
+
+.dashboard-container .liD a:hover {
+  color: #12bbee;
+}
+
+.dashboard-container .liD .iD {
+  margin-right: 20px; /* Espacio entre ícono y texto */
+}
+
+.dashboard-container .logoutD {
+  position: absolute;
+  bottom: 20px;
+}
+
+/* Estilos para la sección principal */
+.dashboard-container .mainD {
+  width: 100%;
+  padding: 20px;
+}
+
+.dashboard-container .main-topD {
+  padding: 10px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: rgb(0, 0, 0);    
+}
+
+.dashboard-container .main-topD p {
+   font-size: 50px;
+}
+
+.dashboard-container .main-bodyD {
+  padding: 10px 10px 10px 20px;
+}
+
+.dashboard-container .main-bodyD h1 {
+  margin: 20px 10px;
+}
+
+.dashboard-container .search_barD {
+  display: flex;
+  padding: 15px;
+  gap: 20px;
+}
+
+.dashboard-container .search_barD input {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid rgb(190, 190, 190);
+}
+
+.dashboard-container .search_barD input:focus {
+  border: 1px solid rgb(13, 235, 235);
+}
+
+.dashboard-container .search_barD select {
+  border: 1px solid rgb(190, 190, 190);
+  padding: 10px;
+}
+
+.dashboard-container .rowD {
+  display: flex;
+  padding: 10px;
+  margin-top: 2rem; /* Ajustado para más espacio vertical */
+  justify-content: flex-end; /* Ajustado para alinear a la derecha */
+  align-items: center; /* Alinear verticalmente */
+}
+
+.dashboard-container .rowD a:hover {
+  color: #12bbee;
+}
+
+.dashboard-container .rowD a {
+  color: #000000;
+}
+
+.dashboard-container .job_card {
+  width: 100%;
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  border-radius: 10px;
+  background: #fff;
+  align-items: center;
+  margin-bottom: 30px; /* Ajustado para más espacio vertical */
+  justify-content: space-between;
+  border: 2px solid rgb(190, 190, 190);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-container .job_details {
+  display: flex;
+  align-items: center;
+}
+
+.dashboard-container .job_details .img { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px; /* Ajusta este valor según tus necesidades */
+  height: 70px; /* Ajusta este valor según tus necesidades */
+  overflow: hidden; /* Para asegurarte de que la imagen no se salga del contenedor */
+  border-radius: 50%; /* Si deseas que la imagen sea circular */
+}
+
+.dashboard-container .job_details .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Para que la imagen se ajuste correctamente */
+}
+
+.dashboard-container .job_details .text {
+  margin-left: 1.5rem; /* Reduce este valor si es necesario */
+  text-align: left;
+}
+
+.dashboard-container .job_details .text h2 {
+  margin: 0; /* Asegúrate de que no haya márgenes adicionales */
+  font-size: 1.2em; /* Ajusta el tamaño según sea necesario */
+  text-align: start;
+}
+
+.dashboard-container .job_details .text span {
+  color: rgb(116, 112, 112);
+}
+
+.dashboard-container .job_salary {
+  text-align: right;
+  color: rgb(54, 54, 54);
+}
+
+.dashboard-container .job_card:active {
+  border: 2px solid rgb(0, 0, 0);
+  transition: 0.4s;
+}
+
+  
