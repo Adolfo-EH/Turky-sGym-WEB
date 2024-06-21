@@ -543,11 +543,11 @@ body{
     color: inherit; 
 }
 
-/*SECCION NOSOTROS*/
-.nosotros
-{
-    height: 100vh;
-    background: linear-gradient(rgba(0,1,3,.5), rgba(0,0,0,.7)), url(img/entrenar-con-pesas.jpg);
+/* SECCION NOSOTROS */
+.nosotros {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 1, 3, .5), rgba(0, 0, 0, .7)), url(img/entrenar-con-pesas.jpg);
     background-size: cover;
     background-position: center center;
     color: #fff;
@@ -556,46 +556,40 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-attachment: scroll;
+    overflow: hidden;
+    box-sizing: border-box; /* Incluye padding y border en el ancho y alto total del elemento */
     background-attachment: fixed;
 }
 
-.nosotros .content
-{
+.nosotros .content {
     max-width: 1100px;
     margin: auto;
-}
-
-.nosotros .content
-{
     width: max-content;
-    margin: auto;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.nosotros .content h1
-{
+.nosotros .content h1 {
     font-size: 4rem;
     letter-spacing: 3px;
 }
 
-.nosotros .content p
-{
+.nosotros .content p {
     margin: 20px;
     color: #ffffff;
     font-size: 16px;
     letter-spacing: 3px;
     text-transform: uppercase;
     max-width: 1050px;
-  
 }
 
-/* Seccion Equipo */
-.Equipo
-{
-    height: 70vh;
+/* Sección Equipo */
+.Equipo {
+    min-height: 70vh;
+    width: 100%;
     background-color: black;
     background-size: cover;
     background-position: center center;
@@ -603,220 +597,295 @@ body{
     position: relative;
     display: flex;
     justify-content: center;
-    align-items:center;
-    text-align: center; /* Asegura que el texto esté centrado */
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    background-attachment: scroll;
 }
 
-.Equipo h4
-{
+.Equipo h4 {
     margin-top: 20px;
 }
 
-.Equipo h1
-{
+.Equipo h1 {
     color: #1fcfdf;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.Equipo .imagenes
-{  
+.Equipo .imagenes {
     display: flex;
-    justify-content: center;    
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 400px;
     margin-top: 150px;
 }
 
-.Administradora img{
-  
-    max-width: 200px; /* Ajusta el tamaño según sea necesario */
+.Administradora img,
+.Entrenadora img,
+.Diseñadora img {
+    max-width: 200px;
     height: 200px;
-    object-fit: cover; /* Recortar la imagen para que llene el contenedor */
-   
+    object-fit: cover;
+}
 
-
-}
-.Entrenadora img{
-    
-    max-width: 200px; /* Ajusta el tamaño según sea necesario */
-    height: 200px;
-    flex-shrink: 0; /* Asegura que las imágenes no se reduzcan más allá de su tamaño original */
-   
-}
-.Diseñadora img{
-    
-    max-width: 200px; /* Ajusta el tamaño según sea necesario */
-    height: 200px;
-    object-fit: cover; /* Recortar la imagen para que llene el contenedor */
-    
-}
-/* Seccion Esfuerzo */
-.Esfuerzo{
-    height: 70vh;
+/* Sección Esfuerzo */
+.Esfuerzo {
+    min-height: 70vh;
+    width: 100%;
     background-color: white;
     background-size: cover;
     background-position: center center;
     color: #000;
     display: flex;
-    align-items:center;
+    align-items: center;
     padding: 200px;
-    
+    overflow: hidden;
+    box-sizing: border-box; /* Incluye padding y border en el ancho y alto total del elemento */
+    background-attachment: scroll;
 }
+
 .Esfuerzo .texts {
-    
-     
-    padding: 20px; 
-    
+    padding: 20px;
 }
+
 .Esfuerzo .texts h6 {
     max-width: 50%;
-    text-align: left;   
-    font-size: 18px; 
-    
+    text-align: left;
+    font-size: 18px;
 }
+
 .Esfuerzo .texts h1 {
     max-width: 75%;
-    text-align: left; 
-    font-weight: bold; 
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: left;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 .Esfuerzo .texts p {
     max-width: 75%;
-    text-align: left; 
-    font-size: 19px; 
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+    text-align: left;
+    font-size: 19px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.Esfuerzo .imagenref img{
 
-    
-    width: 400px; 
-    height: 400px;
-    object-fit: cover;   
-
+.Esfuerzo .imagenref {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente las imágenes */
+    gap: 50px; /* Espacio entre las imágenes */
+    flex-wrap: wrap; /* Permite que las imágenes se envuelvan en filas adicionales */
 }
+
+.Esfuerzo .imagenref img {
+    max-width: 400px;
+    height: auto; /* Altura automática para mantener la proporción */
+    object-fit: cover; /* Ajuste de la imagen para cubrir el contenedor */
+}
+
 .highlight {
-    color: #12bbee; /* Cambia este color según tus necesidades */
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #12bbee;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-/* Seccion mision y vision */
-.meta{
-    
-    height: 120vh;
+
+/* Sección Misión y Visión */
+.meta {
+    min-height: 120vh;
+    width: 100%;
     background-color: black;
     background-size: cover;
     background-position: center center;
     color: #fff;
-    
-    align-items:center;
+    align-items: center;
     padding: 100px;
-    
+    overflow: hidden;
+    box-sizing: border-box; /* Incluye padding y border en el ancho y alto total del elemento */
+    background-attachment: scroll;
 }
-.meta .Mision {
-    
-    justify-content: space-between; /* Asegura que los elementos se distribuyan correctamente */
-    display: flex;
-    align-items:center; /* Alinea los elementos verticalmente en el centro */
-}
-.meta .textmi{
 
+.meta .Mision {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.meta .textmi {
     max-width: 40%;
     text-align: left;
 }
-.meta .textmi h1{
-    max-width: 75%; 
-    font-weight: bold; 
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
+
+.meta .textmi h1 {
+    max-width: 75%;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.meta .textmi p{
+
+.meta .textmi p {
     max-width: 90%;
-    
-    font-size: 19px; 
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
+    font-size: 19px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.meta .imagenmision img{
 
+.meta .imagenmision {
     display: flex;
-    justify-content: center;    
-    gap: 400px;    
-    width: 600px; 
-    height: 400px;
-    object-fit: cover;   
-
+    justify-content: center; /* Centra horizontalmente las imágenes */
+    gap: 20px; /* Espacio entre las imágenes */
+    flex-wrap: wrap; /* Permite que las imágenes se envuelvan en filas adicionales */
 }
+
+.meta .imagenmision img {
+    width: 600px; 
+    height: auto; /* Altura automática para mantener la proporción */
+    object-fit: cover; /* Ajuste de la imagen para cubrir el contenedor */
+    margin-bottom: 20px; /* Espacio inferior entre las imágenes */
+}
+
 .meta .Vision {
     display: flex;
-    justify-content: space-between; /* Asegura que los elementos se distribuyan correctamente */
+    justify-content: space-between;
     margin-top: 150px;
-    align-items:center; /* Alinea los elementos verticalmente en el centro */
+    align-items: center;
 }
-.meta .textvi{
 
+.meta .textvi {
     max-width: 40%;
     text-align: right;
 }
-.meta .textvi h1{
-    
-    font-weight: bold; 
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
-}
-.meta .textvi p{
-    
-     
-    font-size: 19px; 
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
-}
-.meta .imagenvision img{
-    
 
+.meta .textvi h1 {
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.meta .textvi p {
+    font-size: 19px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.meta .imagenvision {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente las imágenes */
+    gap: 20px; /* Espacio entre las imágenes */
+    flex-wrap: wrap; /* Permite que las imágenes se envuelvan en filas adicionales */
+}
+
+.meta .imagenvision img {
     width: 600px; 
-    height: 400px;
-    object-fit: cover;   
-
+    height: auto; /* Altura automática para mantener la proporción */
+    object-fit: cover; /* Ajuste de la imagen para cubrir el contenedor */
+    margin-bottom: 20px; /* Espacio inferior entre las imágenes */
 }
-/* Sector Valores*/
-.contenvalores{
-    height: 60vh;
+
+/* Sección Valores */
+.contenvalores {
+    min-height: 60vh;
+    width: 100%;
     background-size: cover;
     background-position: center center;
     color: #000;
     position: relative;
-   
-    text-align: center; /* Asegura que el texto esté centrado */
+    text-align: center;
     margin-top: 100px;
+    overflow: hidden;
+    box-sizing: border-box; /* Incluye padding y border en el ancho y alto total del elemento */
+    background-attachment: scroll;
 }
-.Valores h1{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bold; 
-}
-.PARRAFO .name{
 
-color: #1fcfdf;
+.Valores h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
 }
+
+.PARRAFO .name {
+    color: #1fcfdf;
+}
+
 .imagenesva {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 200px; /* Espacio entre los elementos */
+    gap: 200px;
     margin-top: 100px;
     margin-bottom: 100px;
 }
-.imagenesva .mejora{
+
+.imagenesva .mejora {
     margin-top: 30px;
-} 
+}
+
 .imagenesva div {
     text-align: center;
-    max-width: 150px; /* Ajusta el tamaño del contenedor de la imagen */
+    max-width: 150px;
 }
+
 .imagenesva img {
     max-width: 100%;
     height: auto;
     margin-bottom: 30px;
 }
+
+/* Media Queries para mantener el diseño organizado en diferentes tamaños de pantalla */
+@media (max-width: 768px) {
+    .nosotros {
+        flex-direction: column; /* Cambia a dirección de columna para dispositivos pequeños */
+        align-items: center; /* Centra los elementos en dispositivos pequeños */
+    }
+    .nosotros .content h1 {
+        max-width: 100%; /* Ajusta según tus necesidades */
+        font-size: 3rem; /* Tamaño de fuente más pequeño para dispositivos pequeños */
+    }
+    .nosotros .content p {
+        max-width: 40%; /* Ajusta según tus necesidades */
+        margin: auto; /* Centra horizontalmente el texto */
+    }
+    .Equipo {
+        min-height: auto;
+        padding: 20px;
+    }
+    .Equipo .text p {
+        max-width: 70%; /* Ancho máximo del texto */
+        margin: auto; /* Centra horizontalmente el texto */
+    }
+    .Equipo .imagenes {
+        gap: 100px;
+        margin: auto;
+        margin-top: 50px;
+    }
+    .Esfuerzo {
+        min-height: auto;
+        padding: 20px;
+    }
+    .Esfuerzo .texts h1, .Esfuerzo .texts p, .Esfuerzo .texts h6 {
+        max-width: 100%; /* Ancho máximo del texto en dispositivos pequeños */
+        font-size: 16px; /* Tamaño de fuente reducido para dispositivos pequeños */
+    }
+    .Esfuerzo .imagenref img {
+        max-width: 80%; /* Reducción del ancho máximo de las imágenes en dispositivos pequeños */
+    }
+    .meta {
+        min-height: auto;
+        padding: 20px;
+    }
+    .meta .textmi h1, .meta .textmi p, .meta .textvi h1, .meta .textvi p {
+        max-width: 80%; /* Reducción del ancho máximo del texto en dispositivos pequeños */
+        font-size: 2.5vw; /* Ajuste de tamaño de fuente más grande para dispositivos pequeños */
+    }
+    .meta .imagenmision img, .meta .imagenvision img {
+        max-width: 80%; /* Reducción del ancho máximo de las imágenes en dispositivos pequeños */
+    }
+    .contenvalores {
+        min-height: auto;
+        padding: 40px;
+    }
+    .imagenesva {
+        margin-top: 0; /* Elimina el margen superior */
+    }
+    .imagenesva div {
+        margin-top: 0; /* Elimina el margen superior */
+    }
+}
+
+
+
 /* SECCION PLANES SERVICIOS */
 .planes{
     height: 100vh;
@@ -1095,252 +1164,3 @@ color: #1fcfdf;
   u {
     color: blue
   }
-
-  /*SECCION DASHBOARD*/
-
-  .containerD {
-    display: flex;
-    width: 100%;
-    font-size: 130%;
-  }
-  
-  navD {
-    background-color: #fff;
-    position: sticky;
-    top: 0px;
-    left: 0;
-    bottom: 0;
-    width: 350px;
-    height: 100vh;
-  }
-  
-  .navbarD {
-    width: 90%;
-    margin: auto;
-  }
-  
-  .logoD {
-    margin: 2rem 0 50px 0;
-    padding-bottom: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .logoD img {
-    width: 100%;
-    height: 150px;
-  }
-  
-  ulD {
-    list-style: none;
-    padding: 0;
-  }
-  
-  liD {
-    padding-bottom: 50px;
-  }
-  
-  liD aD {
-    color: rgb(85, 83, 83);
-    text-decoration: none;
-  }
-  
-  nav iD {
-    width: 50px;
-    text-align: center;
-  }
-  
-  .logoutD {
-    position: absolute;
-    bottom: 20px;
-  }
-
- /* Estilos para el dashboard */
-.dashboard-container {
-  display: flex;
-  width: 100%;
-  font-size: 130%;
-}
-
-.dashboard-container .navD {
-  background-color: #fff;
-  position: sticky;
-  top: 0px;
-  left: 0;
-  bottom: 0;
-  width: 350px;
-  height: 100vh;
-}
-
-.dashboard-container .navbarD {
-  width: 90%;
-  margin: auto;
-}
-
-.dashboard-container .logoD {
-  margin: 2rem 0 50px 0;
-  padding-bottom: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.dashboard-container .logoD img {
-  width: 100%;
-  height: 150px;
-}
-
-.dashboard-container .ulD {
-  list-style: none;
-  padding: 0;
-  margin: 0; /* Añadido para eliminar el margen predeterminado */
-}
-
-.dashboard-container .liD {
-  padding-bottom: 30px; /* Ajustado para más espacio vertical */
-}
-
-.dashboard-container .liD a {
-  display: flex; /* Alinear íconos y texto verticalmente */
-  align-items: center; /* Alinear íconos y texto verticalmente */
-  color: rgb(85, 83, 83);
-  text-decoration: none;
-}
-
-.dashboard-container .liD a:hover {
-  color: #12bbee;
-}
-
-.dashboard-container .liD .iD {
-  margin-right: 20px; /* Espacio entre ícono y texto */
-}
-
-.dashboard-container .logoutD {
-  position: absolute;
-  bottom: 20px;
-}
-
-/* Estilos para la sección principal */
-.dashboard-container .mainD {
-  width: 100%;
-  padding: 20px;
-}
-
-.dashboard-container .main-topD {
-  padding: 10px;
-  text-align: center;
-  letter-spacing: 2px;
-  color: rgb(0, 0, 0);    
-}
-
-.dashboard-container .main-topD p {
-   font-size: 50px;
-}
-
-.dashboard-container .main-bodyD {
-  padding: 10px 10px 10px 20px;
-}
-
-.dashboard-container .main-bodyD h1 {
-  margin: 20px 10px;
-}
-
-.dashboard-container .search_barD {
-  display: flex;
-  padding: 15px;
-  gap: 20px;
-}
-
-.dashboard-container .search_barD input {
-  width: 50%;
-  padding: 10px;
-  border: 1px solid rgb(190, 190, 190);
-}
-
-.dashboard-container .search_barD input:focus {
-  border: 1px solid rgb(13, 235, 235);
-}
-
-.dashboard-container .search_barD select {
-  border: 1px solid rgb(190, 190, 190);
-  padding: 10px;
-}
-
-.dashboard-container .rowD {
-  display: flex;
-  padding: 10px;
-  margin-top: 2rem; /* Ajustado para más espacio vertical */
-  justify-content: flex-end; /* Ajustado para alinear a la derecha */
-  align-items: center; /* Alinear verticalmente */
-}
-
-.dashboard-container .rowD a:hover {
-  color: #12bbee;
-}
-
-.dashboard-container .rowD a {
-  color: #000000;
-}
-
-.dashboard-container .job_card {
-  width: 100%;
-  padding: 15px;
-  cursor: pointer;
-  display: flex;
-  border-radius: 10px;
-  background: #fff;
-  align-items: center;
-  margin-bottom: 30px; /* Ajustado para más espacio vertical */
-  justify-content: space-between;
-  border: 2px solid rgb(190, 190, 190);
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
-}
-
-.dashboard-container .job_details {
-  display: flex;
-  align-items: center;
-}
-
-.dashboard-container .job_details .img { 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 70px; /* Ajusta este valor según tus necesidades */
-  height: 70px; /* Ajusta este valor según tus necesidades */
-  overflow: hidden; /* Para asegurarte de que la imagen no se salga del contenedor */
-  border-radius: 50%; /* Si deseas que la imagen sea circular */
-}
-
-.dashboard-container .job_details .img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Para que la imagen se ajuste correctamente */
-}
-
-.dashboard-container .job_details .text {
-  margin-left: 1.5rem; /* Reduce este valor si es necesario */
-  text-align: left;
-}
-
-.dashboard-container .job_details .text h2 {
-  margin: 0; /* Asegúrate de que no haya márgenes adicionales */
-  font-size: 1.2em; /* Ajusta el tamaño según sea necesario */
-  text-align: start;
-}
-
-.dashboard-container .job_details .text span {
-  color: rgb(116, 112, 112);
-}
-
-.dashboard-container .job_salary {
-  text-align: right;
-  color: rgb(54, 54, 54);
-}
-
-.dashboard-container .job_card:active {
-  border: 2px solid rgb(0, 0, 0);
-  transition: 0.4s;
-}
-
-  
