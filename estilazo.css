@@ -961,15 +961,35 @@ body{
     margin: 15px auto;
     align-items: center;
 }
+@media (max-width: 767px) { /* Ajusta el ancho máximo según tus necesidades */
+    .servicios .seccion-servicio {
+        display: flex;
+        justify-content: center;
+        padding: 40px;
+        width: 80%;
+        box-sizing: border-box;
+        margin: 15px auto;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
 
 .servicios .seccion-servicio img {
-    width: 70%;
+    width: 60%;
     border-radius: 15px;
+}
+
+@media (max-width: 767px) { /* Ajusta el ancho máximo según tus necesidades */
+    .servicios .seccion-servicio img {
+        width: 100%; /* Por ejemplo, el 100% del contenedor */
+        border-radius: 15px; /* Elimina el borde redondeado */
+    }
 }
 
 .servicios .seccion-servicio .texto {
     max-width: 90%;
     text-align: left;
+    margin-top: 10px;
 }
 
 .servicios h3 {
@@ -1009,19 +1029,37 @@ body{
     text-transform: uppercase;
 }
 .tipoplanes .seccion-tipoplanes{
-    width:100;
     display: flex;
-    max-width: 1100px;
+    max-width: 1300px;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .tipoplanes .seccion-tipoplanes .bloque{
-    width: 100%;
+    width: 380px;
+    height: 720px;
     margin: 20px;
     border-radius: 6px;
+    padding: 10px;
     overflow: hidden;
     background: #000;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
     cursor: default;
     transition: all 400ms ease;
+}
+@media (max-width: 767px) { /* Ajusta el ancho máximo según tus necesidades */
+    .tipoplanes .seccion-tipoplanes .bloque{
+        width: 380px;
+        height: 720px;
+        margin: 20px;
+        border-radius: 6px;
+        padding: 10px;
+        overflow: hidden;
+        background: #000;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+        cursor: default;
+        transition: all 400ms ease;
+        flex-direction: column;
+    }
 }
 .tipoplanes .seccion-tipoplanes .bloque:hover{
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
