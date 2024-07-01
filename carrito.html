@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilazo.css">
+    <title>Turky's Gym</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- MENU --->
+    <div class="contenedor-header">
+        <header>
+            <h1>
+                Turky's <span class="txtTurqueza">Gym</span>
+            </h1>
+            <nav id="nav">
+                <a href="index.html">INICIO</a>
+                <a href="nosotros.html">NOSOTROS</a>
+                <a href="contacto.html">CONTACTOs</a>
+                <a href="planes_servicios.html">PLANES/SERVICIOS</a>
+                <a href="cuenta.html">CUENTA</a>
+                <a href="tienda.html">TIENDA</a>
+                <a href="carrito.html">CARRITO</a>
+            </nav>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <div class="nav-responsive" id="icono-nav">
+                <i class="fa-sharp fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <div class="content-wrapper">
+        <section class="tienda-carrito">
+            <div class="shopping-cart">
+                <div class="cart-items">
+                    <table class="cart-table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Producto</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                                <th>Subtotal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="cart-item">
+                                <td class="remove-item"><button class="remove-btn">×</button></td>
+                                <td class="product-info">
+                                    <img src="polo.jpg" alt="Polo" class="product-image">
+                                    <span class="product-name">Polo Licra Compresión Deportivo Gym - L</span>
+                                </td>
+                                <td class="product-price">S/ 26.09</td>
+                                <td class="product-quantity"><input type="number" value="1" class="quantity-input"></td>
+                                <td class="product-subtotal">S/ 26.09</td>
+                            </tr>
+                            <tr class="cart-item">
+                                <td class="remove-item"><button class="remove-btn">×</button></td>
+                                <td class="product-info">
+                                    <img src="polo.jpg" alt="Polo" class="product-image">
+                                    <span class="product-name">Polo Licra Compresión Deportivo Gym - L</span>
+                                </td>
+                                <td class="product-price">S/ 26.09</td>
+                                <td class="product-quantity"><input type="number" value="1" class="quantity-input"></td>
+                                <td class="product-subtotal">S/ 26.09</td>
+                            </tr>
+                            <tr class="cart-item">
+                                <td class="remove-item"><button class="remove-btn">×</button></td>
+                                <td class="product-info">
+                                    <img src="polo.jpg" alt="Polo" class="product-image">
+                                    <span class="product-name">Polo Licra Compresión Deportivo Gym - L</span>
+                                </td>
+                                <td class="product-price">S/ 26.09</td>
+                                <td class="product-quantity"><input type="number" value="1" class="quantity-input"></td>
+                                <td class="product-subtotal">S/ 26.09</td>
+                            </tr>
+                            <tr class="cart-item">
+                                <td class="remove-item"><button class="remove-btn">×</button></td>
+                                <td class="product-info">
+                                    <img src="polo.jpg" alt="Polo" class="product-image">
+                                    <span class="product-name">Polo Licra Compresión Deportivo Gym - L</span>
+                                </td>
+                                <td class="product-price">S/ 26.09</td>
+                                <td class="product-quantity"><input type="number" value="1" class="quantity-input"></td>
+                                <td class="product-subtotal">S/ 26.09</td>
+                            </tr>
+                            <tr class="cart-item">
+                                <td class="remove-item"><button class="remove-btn">×</button></td>
+                                <td class="product-info">
+                                    <img src="polo.jpg" alt="Polo" class="product-image">
+                                    <span class="product-name">Polo Licra Compresión Deportivo Gym - L</span>
+                                </td>
+                                <td class="product-price">S/ 26.09</td>
+                                <td class="product-quantity"><input type="number" value="1" class="quantity-input"></td>
+                                <td class="product-subtotal">S/ 26.09</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="cart-actions">
+                    <input type="text" placeholder="Código Cupón" class="coupon-input">
+                    <button class="apply-btn">Aplicar Cupón</button>
+                    <button class="update-btn">Actualizar Cesta</button>
+                </div>
+                
+                <div class="cart-summary">
+                    <h3 class="summary-title">Total de la Cesta</h3>
+                    <div class="summary-details">
+                        <p class="subtotal">Subtotal: <span>S/ 391.96</span></p>
+                        <p class="shipping">Envío: <span>Recogida Local / Envío a La Esperanza: S/ 311.96</span></p>
+                        <p class="taxes">Impuestos: <span>S/ 43.04</span></p>
+                        <p class="total"><strong>Total: <span>S/ 355.00</span></strong></p>
+                    </div>
+                    <button class="checkout-btn">Pasar a Pagar</button>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <!-- FOOTER >w<-->
+    <footer class = "footer">
+        <div class="containerF">
+            <div class="footer-row">
+                <div class="footerC">
+                    <h4>Compañia</h4>
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="nosotros.html">Nosotros</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                            <li><a href="planes_servicios.html">Planes/Servicios</a></li>
+                            <li><a href="cuenta.html">Cuenta</a></li>
+                            <li><a href="#">Tienda</a></li>
+                        </ul>
+                </div>
+
+                <div class="footerI">
+                    <h4>Información de contacto</h4>
+                        <ul>
+                            <li><a href="#">Urb. San Miguel, Manzana B Lote 5</a></li>
+                            <li><a href="#">contacto@turkysgym.com</a></li>
+                            <li><a href="#">901 225 180</a></li>
+                        </ul>
+                </div>
+
+                <div class="footerL">
+                    <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Términos de uso</a></li>
+                            <li><a href="#">Política de privacidad</a></li>
+                            <li><a href="#">Politica de cookies</a></li>
+                        </ul>
+                </div>
+
+                <div class="footerR">                    
+                        <h4>Redes sociales</h4>
+                        <div class = "social-links">
+                            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>                  
+                </div>
+            </div>
+        </div>
+     </footer>
+</body>
+</html>
