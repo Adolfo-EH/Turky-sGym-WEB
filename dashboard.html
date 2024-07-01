@@ -6,6 +6,8 @@
   <link rel="stylesheet" href="estilazo.css" />
   <!-- Font Awesome Cdn Link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
   <div class="dashboard-container">
@@ -15,141 +17,179 @@
           <img src="img/logo.png" alt="Logo">
         </div>
         <ul class="ulD">
-          <li class="liD"><a class="aD" href="#">
+          <li class="liD"><a class="aD" href="#" onclick="showView('dashboard')">
             <i class="fas fa-user iD"></i>
             <span class="nav-itemD">Dashboard</span>
-          </a>
-          </li>
-          <li class="liD"><a class="aD" href="#">
+          </a></li>
+          <li class="liD"><a class="aD" href="#" onclick="showView('estadisticas')">
             <i class="fas fa-chart-bar iD"></i>
             <span class="nav-itemD">Estadísticas</span>
-          </a>
-          </li>
-          <li class="liD"><a class="aD" href="#">
+          </a></li>
+          <li class="liD"><a class="aD" href="#" onclick="showView('ventas')">
             <i class="fas fa-tasks iD"></i>
             <span class="nav-itemD">Ventas</span>
-          </a>
-          <li class="liD">
-            <a class="aD" href="#">
+          </a></li>
+          <li class="liD"><a class="aD" href="#" onclick="showView('ajustes')">
             <i class="fas fa-cog iD"></i>
             <span class="nav-itemD">Ajustes</span>
-          </a>
-          </li>
-          <li class="liD"><a class="aD" href="#">
+          </a></li>
+          <li class="liD"><a class="aD" href="#" onclick="showView('ayuda')">
             <i class="fas fa-question-circle iD"></i>
             <span class="nav-itemD">Ayuda</span>
-          </a>
-          </li>
+          </a></li>
           <li class="liD"><a class="aD" href="#" class="logoutD">
             <i class="fas fa-sign-out-alt iD"></i>
             <span class="nav-itemD">Salir</span>
-          </a>
-          </li>
+          </a></li>
         </ul>
       </div>
     </nav>
 
     <section class="mainD">
-      <div class="main-topD">
-        <p>VENTAS</p>
+      <div id="dashboard" class="view">
+        <div class="main-topD">
+          <p>DASHBOARD</p>
+        </div>
+        <div class="main-bodyD">
+          <h1>Bienvenido al Dashboard</h1>
+        </div>
       </div>
-      <div class="main-bodyD">
-        <h1>Ventas recientes</h1>
 
-        <div class="search_barD">
-          <input type="search" placeholder="Buscar venta aquí...">
-          <select name="categoria">
-            <option>Categoria</option>
-            <option>Producto</option>
-            <option>Membresía</option>
-          </select>
+      <div id="estadisticas" class="view">
+        <div class="main-topD">
+          <p>ESTADÍSTICAS</p>
         </div>
-
-        <div class="rowD">
-          <a href="#">Ver todo</a>
+        <div class="main-bodyD">
+          <canvas id="ventasChart"></canvas>
         </div>
+      </div>
 
-        <div class="job_card">
-          <div class="job_details">
-            <div class="img">
+      <div id="ventas" class="view">
+        <div class="main-topD">
+          <p>VENTAS</p>
+        </div>
+        <div class="main-bodyD">
+          <h1>Ventas recientes</h1>
+          <div class="search_barD">
+            <input type="search" placeholder="Buscar venta aquí...">
+            <select name="categoria">
+              <option>Categoria</option>
+              <option>Producto</option>
+              <option>Membresía</option>
+            </select>
+          </div>
+          <div class="rowD">
+            <a href="#">Ver todo</a>
+          </div>
+          <div class="job_card">
+            <div class="job_details">
+              <div class="img">
                 <img src="img/plan1.jpg" alt="Imagen referencial del plan mensual">
+              </div>
+              <div class="text">
+                <h2>Plan Mensual</h2>
+                <span>Juan Pérez - Cliente</span>
+              </div>
             </div>
-            <div class="text">
-              <h2>Plan Mensual</h2>
-              <span>Juan Pérez - Cliente</span>
+            <div class="job_salary">
+              <h4>S/. 80.00</h4>
+              <span>hace 1 d</span>
             </div>
           </div>
-          <div class="job_salary">
-            <h4>S/. 80.00</h4>
-            <span>hace 1 d</span>
-          </div>
-        </div>
-
-        <div class="job_card">
-          <div class="job_details">
-            <div class="img">
+          <div class="job_card">
+            <div class="job_details">
+              <div class="img">
                 <img src="img/plan2.png" alt="Imagen referencial del plan trimestral">
+              </div>
+              <div class="text">
+                <h2>Plan Trimestral</h2>
+                <span>Carla Jirón - Cliente</span>
+              </div>
             </div>
-            <div class="text">
-              <h2>Plan Trimestral</h2>
-              <span>Carla Jirón - Cliente</span>
+            <div class="job_salary">
+              <h4>S/. 200.00</h4>
+              <span>hace 5 d</span>
             </div>
           </div>
-          <div class="job_salary">
-            <h4>S/. 200.00</h4>
-            <span>hace 5 d</span>
-          </div>
-        </div>
-
-        <div class="job_card">
-          <div class="job_details">
-            <div class="img">
+          <div class="job_card">
+            <div class="job_details">
+              <div class="img">
                 <img src="img/plan3.jpeg" alt="Imagen referencial del plan anual">
+              </div>
+              <div class="text">
+                <h2>Plan Anual</h2>
+                <span>Félix Quezada - Cliente</span>
+              </div>
             </div>
-            <div class="text">
-              <h2>Plan Anual</h2>
-              <span>Félix Quezada - Cliente</span>
+            <div class="job_salary">
+              <h4>S/. 480.00</h4>
+              <span>hace 12 d</span>
             </div>
           </div>
-          <div class="job_salary">
-            <h4>S/. 480.00</h4>
-            <span>hace 12 d</span>
-          </div>
-        </div>
-
-        <div class="job_card">
-          <div class="job_details">
-            <div class="img">
+          <div class="job_card">
+            <div class="job_details">
+              <div class="img">
                 <img src="img/polo.PNG" alt="Imagen referencial del producto polo">
+              </div>
+              <div class="text">
+                <h2>Polo Licra Compresión Deportivo Gym</h2>
+                <span>Rafael Zapata - Usuario web</span>
+              </div>
             </div>
-            <div class="text">
-              <h2>Polo Licra Compresión Deportivo Gym</h2>
-              <span>Rafael Zapata - Usuario web</span>
+            <div class="job_salary">
+              <h4>S/. 27.50</h4>
+              <span>hace 1 sem</span>
             </div>
           </div>
-          <div class="job_salary">
-            <h4>S/. 27.50</h4>
-            <span>hace 1 sem</span>
+          <div class="job_card">
+            <div class="job_details">
+              <div class="img">
+                <img src="img/proteina.JPG" alt="Proteina whey pro">
+              </div>
+              <div class="text">
+                <h2>Proteína Whey Pro 3Kg Chocolate</h2>
+                <span>Vanessa Venegas - Usuario web</span>
+              </div>
+            </div>
+            <div class="job_salary">
+              <h4>S/. 135.00</h4>
+              <span>hace 1 sem 3 d</span>
+            </div>
           </div>
         </div>
+      </div>
 
-        <div class="job_card">
-          <div class="job_details">
-            <div class="img">
-                <img src="img/proteina.JPG" alt="Proteina whey pro">
-            </div>
-            <div class="text">
-              <h2>Proteína Whey Pro 3Kg Chocolate</h2>
-              <span>Vanessa Venegas - Usuario web</span>
-            </div>
-          </div>
-          <div class="job_salary">
-            <h4>S/. 135.00</h4>
-            <span>hace 1 sem 3 d</span>
-          </div>
+      <div id="ajustes" class="view">
+        <div class="main-topD">
+          <p>AJUSTES</p>
+        </div>
+        <div class="main-bodyD">
+          <h1>Ajustes básicos</h1>
+          <form>
+            <label for="option1">Opción 1</label>
+            <input type="radio" id="option1" name="options" value="option1">
+            <br>
+            <label for="option2">Opción 2</label>
+            <input type="radio" id="option2" name="options" value="option2">
+          </form>
+        </div>
+      </div>
+
+      <div id="ayuda" class="view">
+        <div class="main-topD">
+          <p>AYUDA</p>
+        </div>
+        <div class="main-bodyD">
+          <h1>Centro de ayuda</h1>
+          <p>¿Necesitas ayuda? Aquí encontrarás la información que necesitas.</p>
         </div>
       </div>
     </section>
   </div>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Tu script JS aquí -->
+  <script src="app.js"></script>
 </body>
 </html>
